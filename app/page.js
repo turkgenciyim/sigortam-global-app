@@ -27,19 +27,19 @@ export default function Home() {
               </svg>
             </button>
             <Link
-              className="transition-all rounded-lg lg:hover:bg-white lg:px-5 active:scale-95 hover:text-slate-700 lg:w-32 lg:text-center lg:py-2"
+              className="font-medium transition-all rounded-lg lg:hover:bg-white lg:px-5 active:scale-95 hover:text-slate-700 lg:w-32 lg:text-center lg:py-2"
               href={"/#is-ortaklari"}
             >
               İş Ortakları
             </Link>
             <Link
-              className="transition-all rounded-lg lg:hover:bg-white lg:px-5 active:scale-95 hover:text-slate-700 lg:w-32 lg:text-center lg:py-2"
+              className="font-medium transition-all rounded-lg lg:hover:bg-white lg:px-5 active:scale-95 hover:text-slate-700 lg:w-32 lg:text-center lg:py-2"
               href={"/hakkimizda"}
             >
               Hakkımızda
             </Link>
             <Link
-              className="transition-all rounded-lg lg:hover:bg-white lg:px-5 active:scale-95 hover:text-slate-700 lg:w-32 lg:text-center lg:py-2"
+              className="font-medium transition-all rounded-lg lg:hover:bg-white lg:px-5 active:scale-95 hover:text-slate-700 lg:w-32 lg:text-center lg:py-2"
               href={"/iletisim"}
             >
               İletişim
@@ -88,8 +88,8 @@ export default function Home() {
             <div className="max-w-md px-3 mx-auto space-y-6 text-center sm:max-w-xl md:max-w-2xl xl:max-w-3xl">
               <h2 className="text-4xl xs:text-5xl md:text-6xl font-black  tracking-tight lg:text-7xl xl:text-[5.5rem] font-lato  bg-clip-text text-transparent bg-gradient-to-b from-slate-950 via-gray-700 to-slate-800">
                 <p className="relative z-10 inline text-blue-600">
-                  <span className="z-20">Global</span>
-                  <span className="absolute w-full h-full -translate-x-full bg-blue-100 rotate-4 -skew-y-2 -z-10"></span>
+                  <span className="z-20">Sigortam Global</span>
+                  <span className="absolute bottom-0 w-full -translate-x-full bg-blue-300/40 h-1/3 rotate-3 -skew-y-2 -z-10"></span>
                 </p>{" "}
                 ile yarım saatten kısa sürede poliçenizi keselim.
               </h2>
@@ -98,34 +98,39 @@ export default function Home() {
                 at? Modi at ipsum consectetur odio voluptatem quod a nihil
                 totam.
               </p>
-              <div className="flex items-center justify-center gap-4">
-                <button className="flex justify-between gap-3 py-4 pl-5 pr-4 border bg-slate-50 text-slate-700 border-slate-200 rounded-xl">
-                  <span className="flex-1 inline-block"> Teklif İsteği Oluştur</span>{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6 stroke-blue-500"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
-                    />
-                  </svg>
-                </button>
-                <button className="relative py-4 pl-8 overflow-hidden text-white bg-blue-700 border border-blue-400 group pr-14 rounded-xl academy-button">
-                  Çetinkal Akademi
-                  <span className="absolute py-4 pl-3 text-blue-300 -translate-y-1/2 border-l rounded-full pr-11 group-hover:text-white bg-blue-500/20 border-l-blue-400 hover:bg-blue-200/10 -right-10 top-1/2">
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <button className="relative py-4 pl-8 overflow-hidden bg-white border text-slate-600 fontme border-slate-200 group pr-14 rounded-xl">
+                  <span className="flex-1 inline-block">
+                    {" "}
+                    Teklif İsteği Oluştur
+                  </span>{" "}
+                  <span className="absolute py-4 pl-3 transition-all -translate-y-1/2 bg-white border-l rounded-full text-slate-300 pr-11 group-hover:text-blue-500 border-l-slate-300 hover:bg-blue-100 -right-10 top-1/2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-6 h-6 transition-all "
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button className="relative py-4 pl-8 overflow-hidden text-white bg-blue-700 border border-blue-400 group pr-14 rounded-xl academy-button">
+                  Çetinkal Akademi
+                  <span className="absolute py-4 pl-3 text-blue-300 transition-all -translate-y-1/2 border-l rounded-full pr-11 transa group-hover:text-white bg-blue-500/20 border-l-blue-400 group-hover:bg-blue-200/10 -right-10 top-1/2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 transition-all"
                     >
                       <path
                         strokeLinecap="round"
@@ -141,9 +146,9 @@ export default function Home() {
               <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/5 top-1/2 -z-10 w-24 h-64 blur-[50px] bg-sky-500/20"></div>
               <Link
                 href={"/trafik-sigortasi"}
-                className="flex flex-col justify-between max-h-48 md:max-h-64 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(59,20,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 px-6 pt-12 pb-6 bg-blue-500 group md:row-span-full rounded-2xl"
+                className="flex flex-col relative overflow-hidden justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(59,80,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-8 pr-6 pt-6 pb-3 bg-blue-500 group rounded-2xl"
               >
-                <div className="relative w-full h-24 md:h-64">
+                <div className="relative w-full h-24">
                   <Image src={"/svg/trafik-sigortasi.svg"} alt="" fill />
                 </div>
 
@@ -151,55 +156,59 @@ export default function Home() {
                   <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-blue-50 group-hover:text-blue-200">
                     Trafik <br /> Sigortası
                   </h2>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={3}
-                    stroke="currentColor"
-                    className="relative self-end hidden w-10 h-10 transition-all rounded-full sm:inline-block text-blue-950/20 group-hover:p-2 group-hover:bg-white group-hover:left-0 -left-2 group-hover:text-blue-700"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                    />
-                  </svg>
+                  <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="currentColor"
+                      className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-blue-500 group-hover:block"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </Link>
               <Link
                 href={"/kasko-sigortasi"}
-                className="flex flex-col justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 max-h-64 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(129,20,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-4 pr-3 pt-6 pb-3 bg-violet-500 group rounded-2xl"
+                className="flex flex-col relative overflow-hidden justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(129,20,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-8 pr-6 pt-6 pb-3 bg-violet-500 group rounded-2xl"
               >
-                <div className="relative w-full h-64">
-                  <Image src={"/svg/kasko-sigortasi.svg"} alt="" fill />
+                <div className="relative w-full h-24">
+                  <Image src={"/svg/kasko-sigortasi.svg"} className="rotate-[4deg]" alt="" fill />
                 </div>
 
                 <div className="flex items-center justify-between">
                   <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-violet-50 group-hover:text-violet-200">
                     Kasko <br /> Sigortası
                   </h2>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={3}
-                    stroke="currentColor"
-                    className="relative self-end hidden w-10 h-10 transition-all rounded-full sm:inline-block text-violet-950/20 group-hover:p-2 group-hover:bg-white group-hover:left-0 -left-2 group-hover:text-violet-700"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                    />
-                  </svg>
+                  <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="currentColor"
+                      className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-violet-500 group-hover:block"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </Link>
               <Link
                 href={"https://www.sagliksigortam.biz"}
-                className="flex flex-col justify-between max-h-48 md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 max-h-64 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(220,0,94,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-4 pr-3 pt-6 pb-3 bg-rose-500 group rounded-2xl"
+                className="flex flex-col overflow-hidden relative justify-between max-h-48 md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(220,0,94,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-8 pr-6 pt-6 pb-3 bg-rose-500 group rounded-2xl"
               >
-                <div className="relative w-full h-64">
+                <div className="relative w-full h-24">
                   <Image src={"/svg/saglik-sigortasi.svg"} alt="" fill />
                 </div>
 
@@ -207,27 +216,29 @@ export default function Home() {
                   <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-rose-50 group-hover:text-rose-200">
                     Özel <br /> Sağlık
                   </h2>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={3}
-                    stroke="currentColor"
-                    className="relative self-end hidden w-10 h-10 transition-all rounded-full sm:inline-block text-rose-950/20 group-hover:p-2 group-hover:bg-white group-hover:left-0 -left-2 group-hover:text-rose-700"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                    />
-                  </svg>
+                  <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="currentColor"
+                      className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-rose-500 group-hover:block"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </Link>
               <Link
                 href={"https://www.sagliksigortam.biz"}
-                className="flex flex-col justify-between max-h-48 md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 max-h-64 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(220,0,94,0.9)]  hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-4 pr-3 pt-6 pb-3 bg-rose-500 group rounded-2xl"
+                className="flex flex-col justify-between max-h-48 overflow-hidden relative md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(220,0,94,0.9)]  hover:shadow-none transition-shadow transition-opacity hover:opacity-100 opacity-90 pl-8 pr-6 pt-6 pb-3 bg-rose-500 group rounded-2xl"
               >
-                <div className="relative w-full h-64">
+                <div className="relative w-full h-24">
                   <Image
                     src={"/svg/tamamlayici-saglik-sigortasi.svg"}
                     alt=""
@@ -239,20 +250,22 @@ export default function Home() {
                   <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-rose-50 group-hover:text-rose-200">
                     Tamamlayıcı <br /> Sağlık
                   </h2>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={3}
-                    stroke="currentColor"
-                    className="relative self-end hidden w-10 h-10 transition-all rounded-full sm:inline-block text-rose-950/20 group-hover:p-2 group-hover:bg-white group-hover:left-0 -left-2 group-hover:text-rose-700"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                    />
-                  </svg>
+                  <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="currentColor"
+                      className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-rose-500 group-hover:block"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </Link>
               <div className="flex justify-center order-last row-span-4 col-span-full">
