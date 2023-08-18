@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        ["infinite-slider"]: "infiniteSlider 20s linear infinite alternate-reverse",
+        ["infinite-slider"]:
+          "infiniteSlider 20s linear infinite alternate-reverse",
       },
 
       fontFamily: {
@@ -33,5 +34,8 @@ module.exports = {
       ...screens,
     },
   },
-  plugins: [],
+  rippleui: {
+    removeThemes: ["dark", "light", "whateverTheme"],
+  },
+  plugins: [require("rippleui")],
 };

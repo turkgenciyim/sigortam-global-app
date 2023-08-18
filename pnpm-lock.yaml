@@ -29,6 +29,9 @@ dependencies:
   react-icons:
     specifier: ^4.10.1
     version: 4.10.1(react@18.2.0)
+  rippleui:
+    specifier: ^1.12.1
+    version: 1.12.1
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -263,6 +266,12 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: false
+
+  /@types/postcss-js@4.0.1:
+    resolution: {integrity: sha512-B4EWDvQbB1MfvVxAgdshFcRwm/JVAc1UxziOlgek+Fl0IOeVNIiB7/mCXtJBVzkgHe5rE8G/yZ5j7IUf/1dlFA==}
+    dependencies:
+      postcss: 8.4.28
     dev: false
 
   /@typescript-eslint/parser@6.4.0(eslint@8.47.0)(typescript@5.1.6):
@@ -2117,6 +2126,17 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: false
+
+  /rippleui@1.12.1:
+    resolution: {integrity: sha512-2LLqGQy0Gb+V/XHC+Ucx7rKcgisTr1HBevVc+NiwTiJn4y38Ya1cad8I/ZZHfWbrvKG/bPKYh+XJCM8M4cUs0A==}
+    dependencies:
+      '@types/postcss-js': 4.0.1
+      postcss: 8.4.28
+      postcss-js: 4.0.1(postcss@8.4.28)
+      tailwindcss: 3.3.3
+    transitivePeerDependencies:
+      - ts-node
     dev: false
 
   /run-parallel@1.2.0:

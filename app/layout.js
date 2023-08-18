@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body className={`bg-sky-50 ${dmSans.className} ${dmSans.variable} ${lato.variable}`}>{children}</body>
+      <body className={`bg-white ${dmSans.className} ${dmSans.variable} ${lato.variable}`}>{children}</body>
     </html>
   );
 }

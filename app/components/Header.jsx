@@ -4,12 +4,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="relative z-10 min-h-screen mx-auto overflow-hidden lg:px-6">
+    <header className="relative z-10 min-h-screen mx-auto overflow-hidden bg-sky-50 lg:px-6">
       <nav className="flex items-center justify-between gap-4 px-6 py-6 mx-auto md:gap-0 xs:justify-center md:justify-between max-w-7xl xs:px-3 sm:px-3">
         <Image
           src={"/sigortam-global.png"}
           width={60}
           height={60}
+          priority={true}
           className="rounded-xl drop-shadow-xl"
           alt="Sigortam Global"
         />
@@ -89,7 +90,7 @@ const Header = () => {
         </div>
       </nav>
       <div className="py-4 mx-auto md:py-8 max-w-7xl">
-        <div className="space-y-16 xl:space-y-0 gap-x-16 xl:flex">
+        <div className="items-start space-y-16 xl:space-y-0 gap-x-16 xl:flex">
           <div className="max-w-md mx-auto space-y-6 text-center md:px-3 sm:max-w-xl md:max-w-2xl xl:max-w-3xl">
             <h2 className="text-4xl xs:text-5xl md:text-6xl font-black  tracking-tight lg:text-7xl xl:text-[5.5rem] font-lato  bg-clip-text text-transparent bg-gradient-to-b from-slate-950 via-gray-700 to-slate-800">
               <p className="relative z-10 inline text-blue-600">
@@ -146,15 +147,20 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <div className="relative grid max-w-4xl grid-cols-2 grid-rows-1 gap-4 p-4 mx-auto bg-white border sm:grid-cols-3 xl:grid-rows-none xl:grid-cols-4 rounded-2xl border-slate-100">
+          <div className="relative grid max-w-4xl grid-cols-2 grid-rows-1 gap-4 p-4 mx-auto bg-white border rounded-md sm:grid-cols-3 xl:grid-rows-none xl:grid-cols-4 border-slate-100">
             <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/5 top-1/2 -z-10 w-24 h-64 blur-[50px] bg-blue-500/20"></div>
 
             <Link
               href={"/trafik-sigortasi"}
-              className="flex flex-col relative overflow-hidden justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(59,80,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-blue-500 group rounded-2xl"
+              className="flex flex-col xs:min-w-[11.2rem] relative overflow-hidden justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(59,80,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-blue-500 group rounded-md"
             >
               <div className="relative w-full h-24">
-                <Image src={"/assets/svg/trafik-sigortasi.svg"} alt="" fill />
+                <Image
+                  src={"/assets/svg/trafik-sigortasi.svg"}
+                  alt="Trafik Sigortası"
+                  fill
+                  priority={true}
+                />
               </div>
 
               <div className="flex items-center justify-between">
@@ -181,14 +187,14 @@ const Header = () => {
             </Link>
             <Link
               href={"/kasko-sigortasi"}
-              className="flex flex-col relative overflow-hidden justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(129,20,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-violet-500 group rounded-2xl"
+              className="flex flex-col xs:min-w-[11.2rem] relative overflow-hidden justify-between max-h-48 md:max-h-64  xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(129,20,246,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-violet-500 group rounded-md"
             >
               <div className="relative w-full h-24">
                 <Image
                   src={"/assets/svg/kasko-sigortasi.svg"}
-                  className="rotate-[4deg]"
-                  alt=""
+                  alt="Kasko Sigortası"
                   fill
+                  priority={true}
                 />
               </div>
 
@@ -215,16 +221,21 @@ const Header = () => {
               </div>
             </Link>
             <Link
-              href={"https://www.sagliksigortam.biz"}
-              className="flex flex-col overflow-hidden relative justify-between max-h-48 md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(220,0,94,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-rose-500 group rounded-2xl"
+              href={"/konut-sigortasi"}
+              className="flex flex-col xs:min-w-[11.2rem] relative overflow-hidden  justify-between max-h-48 md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(200,85,17,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-orange-500 group rounded-md"
             >
               <div className="relative w-full h-24">
-                <Image src={"/assets/svg/saglik-sigortasi.svg"} alt="" fill />
+                <Image
+                  src={"/assets/svg/konut-sigortasi.svg"}
+                  alt="Konut Sigortası"
+                  fill
+                  priority={true}
+                />
               </div>
 
               <div className="flex items-center justify-between">
-                <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-rose-50 group-hover:text-rose-200">
-                  Özel <br /> Sağlık
+                <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-orange-50 group-hover:text-orange-200">
+                  Konut <br /> Sigortası
                 </h2>
                 <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
                   <svg
@@ -233,7 +244,7 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={3}
                     stroke="currentColor"
-                    className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-rose-500 group-hover:block"
+                    className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-orange-500 group-hover:block"
                   >
                     <path
                       strokeLinecap="round"
@@ -245,20 +256,21 @@ const Header = () => {
               </div>
             </Link>
             <Link
-              href={"https://www.sagliksigortam.biz"}
-              className="flex flex-col justify-between max-h-48 overflow-hidden relative md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(220,0,94,0.9)]  hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-rose-500 group rounded-2xl"
+              href={"/dask-sigortasi"}
+              className="flex flex-col xs:min-w-[11.2rem] relative overflow-hidden  justify-between max-h-48 md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(200,10,17,0.9)] hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-red-500 group rounded-md"
             >
               <div className="relative w-full h-24">
                 <Image
-                  src={"/assets/svg/tamamlayici-saglik-sigortasi.svg"}
-                  alt=""
+                  src={"/assets/svg/dask-sigortasi.svg"}
+                  alt="Dask Sigortası"
                   fill
+                  priority={true}
                 />
               </div>
 
               <div className="flex items-center justify-between">
-                <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-rose-50 group-hover:text-rose-200">
-                  Tamamlayıcı <br /> Sağlık
+                <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-red-50 group-hover:text-red-200">
+                  Dask <br /> Sigortası
                 </h2>
                 <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
                   <svg
@@ -267,7 +279,7 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={3}
                     stroke="currentColor"
-                    className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-rose-500 group-hover:block"
+                    className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-red-500 group-hover:block"
                   >
                     <path
                       strokeLinecap="round"
@@ -278,6 +290,77 @@ const Header = () => {
                 </div>
               </div>
             </Link>
+            <Link
+              href={"/pati-sigortasi"}
+              className="flex flex-col xs:min-w-[11.2rem] relative justify-between max-h-48 overflow-hidden  md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(255,200,0,0.9)]  hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-yellow-500 group rounded-md"
+            >
+              <div className="relative w-full h-24">
+                <Image
+                  src={"/assets/svg/pati-sigortasi.svg"}
+                  alt="Pati Sigortası"
+                  fill
+                  priority={true}
+                />
+              </div>
+
+              <div className="flex items-center justify-between">
+                <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-yellow-50 group-hover:text-yellow-200">
+                  Pati <br /> Sigortası
+                </h2>
+                <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="currentColor"
+                    className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-yellow-500 group-hover:block"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+            <Link
+              href={"/telefon-sigortasi"}
+              className="flex flex-col xs:min-w-[11.2rem] relative justify-between max-h-48 overflow-hidden  md:max-h-64 col-span-1 row-span-1 xl:col-span-2 xl:row-span-1 xl:max-h-64 shadow-[3.5px_3.5px_0px_0px_rgba(115,257,150,0.9)]  hover:shadow-none transition-shadow transition-opacity hover:opacity-100  pl-3 xs:pl-6 pr-6 pt-6 pb-3 bg-emerald-500 group rounded-md"
+            >
+              <div className="relative w-full h-24">
+                <Image
+                  src={"/assets/svg/telefon-sigortasi.svg"}
+                  alt="Telefon Sigortası"
+                  fill
+                  priority={true}
+                />
+              </div>
+
+              <div className="flex items-center justify-between">
+                <h2 className="flex-1 text-xl font-black transition-all md:text-2xl font-lato text-emerald-50 group-hover:text-emerald-200">
+                  Telefon <br /> Sigortası
+                </h2>
+                <div className="inset-0 z-20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:absolute group-hover:flex bg-black/40">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="currentColor"
+                    className="hidden w-16 h-16 p-4 text-blue-400 transition-all bg-white rounded-full rounded-tr-none right-4 group-hover:text-emerald-500 group-hover:block"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
             {/* <div className="flex justify-center order-last row-span-4 col-span-full">
               <button className="relative w-full h-full py-4 mx-auto overflow-hidden transition-all bg-white border hover:text-sky-700 hover:bg-sky-100 group rounded-xl border-slate-100 hover:border-sky-300 active:scale-95">
                 Hepsini Görüntüle
