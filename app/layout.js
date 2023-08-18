@@ -1,5 +1,7 @@
 import "./globals.css";
 import { DM_Sans, Lato } from "next/font/google";
+import Navigation from "@/app/components/layout/Navigation";
+import Banner from "@/app/components/layout/Banner";
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dmSans" });
 const lato = Lato({
@@ -16,7 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body className={`bg-white ${dmSans.className} ${dmSans.variable} ${lato.variable}`}>{children}</body>
+      <body
+        className={`bg-white ${dmSans.className} ${dmSans.variable} ${lato.variable}`}
+      >
+        <Banner/>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
