@@ -35,7 +35,7 @@ module.exports = {
     },
   },
   rippleui: {
-    removeThemes: ["dark", "light", "whateverTheme"],
+    removeThemes: ["dark", "whateverTheme"],
   },
   plugins: [require("rippleui")],
 };
