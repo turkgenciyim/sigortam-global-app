@@ -45,17 +45,17 @@ const Page = () => {
   };
 
   return (
-    <div className="p-4 xs:p-6 sm:p-8">
+    <div className="p-4 xs:p-6 sm:p-8 max-w-[100rem] mx-auto">
       <HeaderSection />
-      <div className="max-w-6xl mx-auto mt-12">
+      <div className="mx-auto ">
         {isSuccessfullySubmitted && (
-          <div className="w-full px-6 py-12 border bg-sky-50 border-slate-100 rounded-xl">
+          <div className="w-full px-6 py-20 border bg-sky-50 border-slate-100 rounded-b-xl">
             <h2 className="text-2xl xs:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-center text-transparent pb-1.5 bg-clip-text bg-gradient-to-tr from-sky-500 to-cyan-500">
               Trafik Sigortası teklif <br /> isteğiniz başarıyla gönderildi.
             </h2>
             <p className="max-w-xl mx-auto my-4 text-slate-600">
-              Sevgili müşterimiz teklif isteğiniz bize ulaştı. Sizi en geç yarım
-              saat içerisinde arayıp en uygun teklifi sunacağız. Çetinkal
+              Sevgili müşterimiz teklif isteğiniz bize ulaştı. Sizi en geç 30
+              dakika içerisinde arayıp en uygun teklifi sunacağız. Çetinkal
               Sigorta&apos;dan gelecek aramaları lütfen cevaplayınız.
             </p>
             <div className="max-w-xs mx-auto mt-8">
@@ -63,7 +63,7 @@ const Page = () => {
                 Aranacağınız numara aşağıda yer almaktadır:
               </p>
               <button className="w-full px-8 py-4 mt-4 text-lg font-bold text-white md:text-xl font-lato bg-sky-500 rounded-xl">
-                0 5XX XXX XX XX
+                0 (532) 273 43 25
               </button>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Page = () => {
         {!isSuccessfullySubmitted && (
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="grid max-w-[46rem] grid-cols-2 gap-x-6 gap-y-0 py-6 space-y-5 sm:flex-nowrap"
+            className="grid max-w-[50rem]  mt-12 grid-cols-2 gap-x-6 gap-y-0 py-6 space-y-5 mx-auto sm:flex-nowrap"
           >
             {/* Standart Inputs */}
             <>
@@ -112,14 +112,14 @@ const Page = () => {
                           Form ile teklif almak istiyorum.
                         </span>
                         <span className="block mt-1 text-sm text-left text-slate-100/75">
-                          Telefon numarası gereklidir.
+                          30 dakika içinde geri dönüş garantisi
                         </span>
                       </div>
                     </button>
                     <Link
                       target="_blank"
                       href={`https://wa.me/5383912547`}
-                      className="flex flex-col w-full max-w-sm gap-4 py-5 pl-6 pr-6 transition-colors border xs:flex-row xs:pl-6 xs:pr-12 border-emerald-500 active:scale-95 rounded-xl bg-emerald-500 hover:bg-emerald-600"
+                      className="flex flex-col w-full max-w-sm gap-4 py-5 pl-6 pr-6 transition-colors border xs:flex-row xs:pl-6 xs:pr-12 border-emerald-500 active:scale-95 rounded-xl bg-emerald-500 hover:bg-emerald-400"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +143,11 @@ const Page = () => {
                 <hr className="my-8" />
                 <div>
                   <h5 className="text-xl font-bold">
-                    Kişisel Bilgilerine ihtiyacımız var
+                    Seni tanımamız için bir kaç bilgiye ihtiyacımız var
                   </h5>
                   <p className="mt-1 text-slate-400">
-                    İşlemler tamamlandıktan sonra kişisel verilerini
-                    işlediğimizi unutma.{" "}
+                    Neden bu kadar kişisel veriye ihtiyacımız olduğunu buradan
+                    okuyabilirsin.{" "}
                     <Link
                       href={"/kisisel-verilerin-korunmasi-metni"}
                       target="_blank"
@@ -428,16 +428,15 @@ const Page = () => {
 
 export const HeaderSection = () => {
   return (
-    <div className=" w-full flex flex-col lg:flex-row bg-gradient-to-b md:bg-gradient-to-r from-blue-100 via-blue-200 to-blue-400 min-h-[23rem] rounded-xl sm:rounded-3xl">
+    <div className=" w-full flex flex-col lg:flex-row bg-gradient-to-b md:bg-gradient-to-r from-blue-100 via-blue-200 to-blue-400 min-h-[23rem] rounded-t-xl sm:rounded-t-3xl">
       <div className="flex-1 px-4 py-6 sm:py-12 xl:py-12 lg:pl-12 xl:pl-24">
         <div className="flex flex-col items-center justify-center h-full space-y-4 md:space-y-8 lg:max-w-2xl lg:items-start">
           <h1 className="text-2xl font-black tracking-tight text-blue-800 xs:text-3xl sm:text-5xl md:text-6xl font-lato">
             Trafik Sigortası ile karşı <br /> tarafı güvence altın alın.
           </h1>
           <p className="max-w-xl text-sm text-blue-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            labore quos debitis vero molestias dolores sit delectus illo magnam
-            modi?
+            Aracınız ile karşı tarafa veya üçüncü şahıslara vereceğiniz maddi
+            zararları karşılamak için Trafik Sigortası yanınızda!
           </p>
         </div>
       </div>
