@@ -2,8 +2,6 @@ import Header from "@/app/components/Header";
 import Partners from "@/app/components/Partners";
 import Query from "@/app/components/Query";
 import Features from "@/app/components/Features";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
