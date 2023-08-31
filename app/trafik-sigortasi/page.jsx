@@ -80,38 +80,14 @@ const Page = () => {
                 <div className="space-y-5">
                   <div>
                     <h5 className="text-2xl font-bold tracking-tight text-sky-950">
-                      1. Nasıl teklif almayı tercih edersin?
+                      1. Teklif almak istediğiniz yolu seçin.
                     </h5>
+                    <p className="mt-1 text-lg font-medium text-slate-800">
+                 Whatsapp ile fotokopinizi veya ruhsatı göndererek teklif alabilirsiniz.{" "}
+                   
+                  </p>
                   </div>
-                  <div className="flex flex-wrap gap-5 ">
-                    <button
-                      type="button"
-                      role="button"
-                      className="flex flex-col w-full max-w-sm gap-4 py-5 pl-6 pr-6 transition-colors border xs:flex-row xs:pl-6 xs:pr-12 border-sky-500 active:scale-95 rounded-xl bg-sky-500 hover:bg-sky-600"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="self-center w-7 h-7 stroke-white fill-white/20"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      <div>
-                        <span className="block font-semibold text-white">
-                          Form ile teklif almak istiyorum.
-                        </span>
-                        <span className="block mt-1 text-sm text-left text-slate-100/75">
-                          30 dakika içinde geri dönüş garantisi
-                        </span>
-                      </div>
-                    </button>
+                  <div className="flex flex-wrap gap-5">
                     <Link
                       target="_blank"
                       href={`https://wa.me/5383912547`}
@@ -134,12 +110,41 @@ const Page = () => {
                         </span>
                       </div>
                     </Link>
+                    <button
+                      type="button"
+                      role="button"
+                      className="flex flex-col w-full max-w-sm gap-4 py-5 pl-6 pr-6 transition-colors border xs:flex-row xs:pl-6 xs:pr-12 border-sky-500 active:scale-95 rounded-xl bg-sky-500 hover:bg-sky-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        gi
+                        stroke="currentColor"
+                        className="self-center w-7 h-7 stroke-white fill-white/20"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      <div>
+                        <span className="block font-semibold text-white">
+                          Form ile teklif almak istiyorum.
+                        </span>
+                        <span className="block mt-1 text-sm text-left text-slate-100/75">
+                          30 dakika içinde geri dönüş garantisi
+                        </span>
+                      </div>
+                    </button>
                   </div>
                 </div>
                 <hr className="my-8" />
                 <div>
                   <h5 className="text-xl font-bold">
-                    Seni tanımamız için bir kaç bilgiye ihtiyacımız var
+                    En uyguna teklif almak için sana ihtiyacımız var
                   </h5>
                   <p className="mt-1 text-slate-400">
                     Neden kişisel verilerine ihtiyacımız var? Kısa bir göz

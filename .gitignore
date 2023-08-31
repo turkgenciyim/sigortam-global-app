@@ -8,9 +8,12 @@
 # testing
 /coverage
 
+/.react-email/
+
 # next.js
 /.next/
 /out/
+
 
 # production
 /build
