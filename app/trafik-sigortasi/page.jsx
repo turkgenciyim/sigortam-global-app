@@ -82,7 +82,7 @@ const Page = () => {
                     <h5 className="text-2xl font-bold tracking-tight text-sky-950">
                       1. Teklif almak istediğiniz yolu seçin.
                     </h5>
-                    <p className="mt-1 text-lg font-medium text-slate-800">
+                    <p className="mt-1 text-lg font-medium tracking-tight text-slate-400">
                  Whatsapp ile fotokopinizi veya ruhsatı göndererek teklif alabilirsiniz.{" "}
                    
                   </p>
@@ -90,7 +90,7 @@ const Page = () => {
                   <div className="flex flex-wrap gap-5">
                     <Link
                       target="_blank"
-                      href={`https://wa.me/5383912547`}
+                      href={`https://wa.me/905322734325`}
                       className="flex flex-col w-full max-w-sm gap-4 py-5 pl-6 pr-6 transition-colors border xs:flex-row xs:pl-6 xs:pr-12 border-emerald-500 active:scale-95 rounded-xl bg-emerald-500 hover:bg-emerald-600"
                     >
                       <svg
@@ -144,7 +144,7 @@ const Page = () => {
                 <hr className="my-8" />
                 <div>
                   <h5 className="text-xl font-bold">
-                    En uyguna teklif almak için sana ihtiyacımız var
+                    1. Kişisel Bilgiler
                   </h5>
                   <p className="mt-1 text-slate-400">
                     Neden kişisel verilerine ihtiyacımız var? Kısa bir göz
@@ -284,7 +284,7 @@ const Page = () => {
                 <hr className="mb-8" />
                 <div>
                   <h5 className="text-xl font-bold">
-                    Ürün teklifi almak için gerekli bilgiler
+                  2.  İstediğin ürün için teklif almana az kaldı.
                   </h5>
                   <p className="mt-1 text-slate-400">
                     Şimdi teklif almak istediğin ürün için bir kaç bilgiye
@@ -433,9 +433,9 @@ export const HeaderSection = () => {
   return (
     <div className=" w-full flex flex-col lg:flex-row bg-gradient-to-b md:bg-gradient-to-r from-blue-100 via-blue-200 to-blue-400 min-h-[23rem] rounded-t-xl sm:rounded-t-3xl">
       <div className="flex-1 px-4 py-6 sm:py-12 xl:py-12 lg:pl-12 xl:pl-24">
-        <div className="flex flex-col items-center justify-center h-full space-y-4 md:space-y-8 lg:max-w-2xl lg:items-start">
+        <div className="flex flex-col items-center justify-center h-full max-w-xl mx-auto space-y-4 text-center md:space-y-8 lg:text-left lg:max-w-md xl:max-w-4xl lg:items-start">
           <h1 className="text-2xl font-black tracking-tight text-blue-800 xs:text-3xl sm:text-5xl md:text-6xl font-lato">
-            Trafik Sigortası ile karşı <br /> tarafı güvence altın alın.
+            Trafik Sigortası ile karşı tarafın <br />  maddi zararlarını karşılayın.
           </h1>
           <p className="max-w-xl text-sm text-blue-700">
             Aracınız ile karşı tarafa veya üçüncü şahıslara vereceğiniz maddi
